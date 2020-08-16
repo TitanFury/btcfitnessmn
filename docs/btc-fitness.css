@@ -1,0 +1,1112 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS Reset */
+@font-face {
+	font-family: 'icomoon';
+	src:  url('icomoon/fonts/icomoon.eot?tfb99n');
+	src:  url('icomoon/fonts/icomoon.eot?tfb99n#iefix') format('embedded-opentype'),
+	  url('icomoon/fonts/icomoon.ttf?tfb99n') format('truetype'),
+	  url('icomoon/fonts/icomoon.woff?tfb99n') format('woff'),
+	  url('icomoon/fonts/icomoon.svg?tfb99n#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-file-empty:before {
+	content: "\e924";
+  }
+  .icon-folder:before {
+	content: "\e92f";
+  }
+  .icon-folder-open:before {
+	content: "\e930";
+  }
+  .icon-phone:before {
+	content: "\e942";
+  }
+  .icon-phone-hang-up:before {
+	content: "\e943";
+  }
+  .icon-pushpin:before {
+	content: "\e946";
+  }
+  .icon-location:before {
+	content: "\e947";
+  }
+  .icon-location2:before {
+	content: "\e948";
+  }
+  .icon-printer:before {
+	content: "\e954";
+  }
+  .icon-display:before {
+	content: "\e956";
+  }
+  .icon-mobile:before {
+	content: "\e958";
+  }
+  .icon-mobile2:before {
+	content: "\e959";
+  }
+  .icon-box-add:before {
+	content: "\e95e";
+  }
+  .icon-box-remove:before {
+	content: "\e95f";
+  }
+  .icon-user:before {
+	content: "\e971";
+  }
+  .icon-users:before {
+	content: "\e972";
+  }
+  .icon-quotes-left:before {
+	content: "\e977";
+  }
+  .icon-quotes-right:before {
+	content: "\e978";
+  }
+  .icon-spinner11:before {
+	content: "\e984";
+  }
+  .icon-cog:before {
+	content: "\e994";
+  }
+  .icon-cogs:before {
+	content: "\e995";
+  }
+  .icon-mug:before {
+	content: "\e9a2";
+  }
+  .icon-menu:before {
+	content: "\e9bd";
+  }
+  .icon-download3:before {
+	content: "\e9c7";
+  }
+  .icon-upload3:before {
+	content: "\e9c8";
+  }
+  .icon-earth:before {
+	content: "\e9ca";
+  }
+  .icon-link:before {
+	content: "\e9cb";
+  }
+  .icon-flag:before {
+	content: "\e9cc";
+  }
+  .icon-bookmark:before {
+	content: "\e9d2";
+  }
+  .icon-bookmarks:before {
+	content: "\e9d3";
+  }
+  .icon-star-empty:before {
+	content: "\e9d7";
+  }
+  .icon-star-full:before {
+	content: "\e9d9";
+  }
+  .icon-heart:before {
+	content: "\e9da";
+  }
+  .icon-notification:before {
+	content: "\ea08";
+  }
+  .icon-question:before {
+	content: "\ea09";
+  }
+  .icon-info:before {
+	content: "\ea0c";
+  }
+  .icon-cross:before {
+	content: "\ea0f";
+  }
+  .icon-checkmark:before {
+	content: "\ea10";
+  }
+  .icon-checkmark2:before {
+	content: "\ea11";
+  }
+  .icon-play3:before {
+	content: "\ea1c";
+  }
+  .icon-pause2:before {
+	content: "\ea1d";
+  }
+  .icon-arrow-up:before {
+	content: "\ea32";
+  }
+  .icon-arrow-up-right:before {
+	content: "\ea33";
+  }
+  .icon-arrow-right:before {
+	content: "\ea34";
+  }
+  .icon-arrow-down-right:before {
+	content: "\ea35";
+  }
+  .icon-arrow-down:before {
+	content: "\ea36";
+  }
+  .icon-arrow-down-left:before {
+	content: "\ea37";
+  }
+  .icon-arrow-left:before {
+	content: "\ea38";
+  }
+  .icon-circle-up:before {
+	content: "\ea41";
+  }
+  .icon-circle-right:before {
+	content: "\ea42";
+  }
+  .icon-circle-down:before {
+	content: "\ea43";
+  }
+  .icon-checkbox-checked:before {
+	content: "\ea52";
+  }
+  .icon-checkbox-unchecked:before {
+	content: "\ea53";
+  }
+  .icon-mail4:before {
+	content: "\ea86";
+  }
+  .icon-facebook:before {
+	content: "\ea90";
+  }
+  .icon-instagram:before {
+	content: "\ea92";
+  }
+  .icon-youtube:before {
+	content: "\ea9d";
+  }
+  .icon-github:before {
+	content: "\eab0";
+  }
+  .icon-linkedin:before {
+	content: "\eac9";
+  }
+  .icon-linkedin2:before {
+	content: "\eaca";
+  }
+
+.trainingphoto {
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+.image {
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	float: right;
+	
+}
+
+
+html {
+	height: 100%;
+	width: 100%;
+	/* overflow-y: scroll; */
+}
+
+body {
+	overflow-x: hidden;
+	line-height: 1.2;
+}
+
+.site__bd {
+	line-height: 1.4;
+}
+
+:root {
+	--SITE_MAX_WIDTH: 1024px;
+	--PRIMARY_COLOR: #0965ac;
+	--SECONDARY_COLOR: #0c97d0;
+	--ACCENT_COLOR: #5cc150;
+	--FONT_COLOR_LIGHT: #FFFFFF;
+	--HDG_FONT: Tahoma, Geneva, sans-serif;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site__bd {
+	flex: 1;
+}
+
+.header {
+	background-color: #0965ab;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header__item {
+	width: 100%;
+}
+
+.header__item--primary {
+	background-color: var(--PRIMARY_COLOR);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.header__item--primary > .header__itemInner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+	.header__item--primary > .header__itemInner{
+		flex-direction: row;
+		align-items: center;
+	}
+
+}
+
+.header__item--secondary {
+	background-color: var(--SECONDARY_COLOR);
+	/* background: linear-gradient(var(--SECONDARY_COLOR) 0%, var(--SECONDARY_COLOR) 85%, var(--ACCENT_COLOR) 85%, var(--ACCENT_COLOR) 100%); */
+	border-bottom: 5px solid var(--ACCENT_COLOR);
+}
+
+.header__itemInner {
+	max-width: var(--SITE_MAX_WIDTH);
+	margin: 0 auto;
+}
+
+.contactCallout {
+	max-width: 350px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+	line-height: 1.2;
+    font-weight: bold;
+	color: var(--FONT_COLOR_LIGHT);
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.contactCallout__phonenumber {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.contactCallout__phonenumber:hover {
+	color: var(--ACCENT_COLOR);
+}
+
+.contactCallout__callout {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+	.contactCallout {
+		margin-left: 15px;
+		margin-bottom: 0;
+	}
+
+	.contactCallout__phonenumber {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+
+	.contactCallout__callout {
+
+	}
+}
+
+.navigation {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.navigation__list {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.navigation__link {
+	display: block;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	text-decoration: none;
+	padding: 12px 5px;
+	position: relative;
+}
+
+
+.navigation__link:hover {
+	color: var(--FONT_COLOR_LIGHT);
+}
+
+@media (min-width: 768px) {
+	.navigation__link:after {
+		content: "";
+		background: var(--FONT_COLOR_LIGHT);
+		bottom: 5px;
+		height: 2px;
+		left: 0;
+		position: absolute;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transform-origin: 50%;
+		transform-origin: 50%;
+		-webkit-transition: all 255ms cubic-bezier(.29,.19,.405,1);
+		transition: all 255ms cubic-bezier(.29,.19,.405,1);
+		width: 100%;
+	}
+	
+	.navigation__link:hover:after {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+
+
+@media (min-width: 768px) {
+	.navigation {
+		padding: 0 20px;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.navigation__list {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.navigagtion__link {
+		padding: 10px 5px;
+	}
+}
+
+.logo {
+	max-width: 350px;
+	line-height: 0;
+}
+@media (min-width: 768px) {
+	.logo {
+		max-width: 450px;
+	}
+}
+
+.constrain {
+	max-width: var(--SITE_MAX_WIDTH);
+	width: 100%;
+}
+
+.constrain--page {
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.quote {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.home {
+	position: relative;
+}
+
+.home__image {
+	position: relative;
+	clip-path: polygon(26% 0, 100% 0%, 100% 99%, 25% 100%);
+	left: -29%;
+	width: 120%;
+}
+
+.home__content {
+	max-width: 680px;
+    margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+	.home__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 33%;
+		z-index: 1;
+		max-width: auto;
+	}
+
+	.home__image {
+		clip-path: none;
+		width: 100%;
+		left: auto;
+	}
+}
+
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+a:active {
+	text-decoration: none;
+}
+
+.micah {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	border-radius: 15px;
+	padding-right: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+
+}
+/* .micah1 {
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	border-radius: 15px;
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 0px;
+} */
+
+.hdg {
+	font-family: var(--HDG_FONT);
+	font-weight: bold;
+	line-height: 1.2;
+	color: var(--PRIMARY_COLOR);
+}
+
+.hdg__1 {
+	font-size: 24px;
+}
+
+.hdg__2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+.hdg__4 {
+	font-size: 14px;
+}
+
+.hdg__5 {
+	font-size: 12px;
+}
+
+.isVisuallyHidden {
+	text-indent: -9999;
+	background: transparent;
+	color: transparent;
+	width: 1px;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+	visibility: hidden;
+}
+
+.vr {
+	margin-bottom: 2px;
+}
+
+.vr__2 {
+	margin-bottom: 4px;
+}
+
+.vr__3 {
+	margin-bottom: 6px;
+}
+
+.vr__4 {
+	margin-bottom: 8px;
+}
+
+.vr__5 {
+	margin-bottom: 10px;
+}
+
+.vr__6 {
+	margin-bottom: 12px;
+}
+
+.vr__7 {
+	margin-bottom: 14px;
+}
+
+.vr__8 {
+	margin-bottom: 16px;
+}
+
+.vr__9 {
+	margin-bottom: 18px;
+}
+
+.vr__10 {
+	margin-bottom: 20px;
+}
+
+.footer {
+	color: white;
+	background: linear-gradient(#2aa3d6, #0965ab);
+	padding: 20px 10px;
+}
+
+.footer__smallText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: var(--SITE_MAX_WIDTH);
+	margin: 0 auto;
+}
+
+.socialList {
+	display: flex;
+	align-items: center;
+}
+
+.socialList__link {
+	display: block;
+	height: auto;
+	padding: 10px;
+    font-size: 30px;
+}
+
+.socialList__link > * {
+	width: 100%;
+}
+
+.quarantineContent:before,
+.quarantineContent:after {
+    content: " ";
+    display: table;
+}
+
+.quarantineContent:after {
+    clear: both;
+}
+
+/*
+ Baseline
+ 1. Set the container to inherit basic styles from it's parent
+ 2. Make sure long words line break appropriately
+ 3. Remove excess margin from the first and last child and use !important to override inheritance from ancestors
+========================================================================== */
+.quarantineContent {
+    color: inherit; /* 1 */
+    font-family: inherit;  /* 1 */
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    -ms-word-wrap: break-word; /* 2 */
+        word-wrap: break-word; /* 2 */
+}
+
+.quarantineContent > *:first-child {
+    margin-top: 0 !important; /* 3 */
+}
+
+.quarantineContent > *:last-child {
+    margin-bottom: 0 !important; /* 3 */
+}
+
+/*
+ Embedded Content & Media
+ * All media set to max-width 100% to prevent it from overflowing the container
+ 1. !important to override inheritance from ancestors
+ 2. If a piece of media does not have a container, add margin below it to keep the flow intact
+========================================================================== */
+.quarantineContent img,
+.quarantineContent iframe,
+.quarantineContent embed,
+.quarantineContent object,
+.quarantineContent video,
+.quarantineContent audio,
+.quarantineContent canvas,
+.quarantineContent picture {
+    max-width: 100% !important; /* 1 */
+}
+
+/* 2 */
+.quarantineContent > img,
+.quarantineContent > iframe,
+.quarantineContent > embed,
+.quarantineContent > object,
+.quarantineContent > video,
+.quarantineContent > audio,
+.quarantineContent > canvas,
+.quarantineContent > picture {
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/*
+ Anchors
+========================================================================== */
+.quarantineContent a:link {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.quarantineContent a:visited {
+
+}
+
+.quarantineContent a:focus,
+.quarantineContent a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+.quarantineContent a:active {
+
+}
+
+/*
+ Paragraphs
+========================================================================== */
+.quarantineContent p {
+    margin-bottom: 1rem;
+}
+
+/*
+ Headings
+ 1. Take advantage of margin collapsing to create greater space above a heading
+ 2. Reduce line-height as headings are much larger than body copy
+ 3. Headings should stay the same color as intended and not inherit link styles and use !important to override inheritance from ancestors
+========================================================================== */
+.quarantineContent h1,
+.quarantineContent h2,
+.quarantineContent h3,
+.quarantineContent h4,
+.quarantineContent h5,
+.quarantineContent h6 {
+    margin-top: 1.7rem; /* 1 */
+    margin-bottom: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+	line-height: 1.2; /* 2 */
+	font-family: var(--HDG_FONT);
+	color: var(--PRIMARY_COLOR);
+}
+
+.quarantineContent h1 {
+    font-size: 2.25rem;
+}
+
+.quarantineContent h2 {
+    font-size: 1.5rem;
+}
+
+.quarantineContent h3 {
+    font-size: 1.3125rem;
+}
+
+.quarantineContent h4 {
+    font-size: 1.125rem;
+}
+
+.quarantineContent h5 {
+    font-size: 1rem;
+}
+
+.quarantineContent h1 a,
+.quarantineContent h2 a,
+.quarantineContent h3 a,
+.quarantineContent h4 a,
+.quarantineContent h5 a,
+.quarantineContent h6 a {
+    color: inherit !important; /* 3 */
+}
+
+/*
+ Blockquote
+ 1. Push content away from the horizontal rule more than the normal spacing
+ 2. Border inherits color from text color
+ 3. Remove bottom margin from last item inside a blockquote
+========================================================================== */
+.quarantineContent blockquote {
+    box-sizing: border-box;
+    margin-top: 1.7rem; /* 1 */
+    margin-bottom: 1.7rem; /* 1 */
+    border-left: 5px solid; /* 2 */
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.3125rem;
+    font-style: italic;
+}
+
+.quarantineContent blockquote > *:last-child {
+    margin-bottom: 0; /* 3 */
+}
+
+/*
+ Address
+ 1. Mimic browser default text style - italics
+========================================================================== */
+.quarantineContent address {
+    margin-bottom: 1rem;
+    font-style: italic; /* 1 */
+}
+
+/*
+ Horizontal Rule
+ 1. Push content away from the horizontal rule than the normal spacing
+ 2. Set an explicit 1px height for the horizontal rule
+ 3. Remove borders for maximum browser support
+ 4. Set the color of the horizontal rule as both color and background-color for maximum browser support
+ 5. Reduce font-size and line-height to keep height from exceeeding 1px
+========================================================================== */
+.quarantineContent hr {
+    margin-top: 1.7rem; /* 1 */
+    margin-bottom: 1.7rem; /* 1 */
+    height: 1px; /* 2 */
+    border: none; /* 3 */
+    background: #aaaaaa; /* 4 */
+    color: #aaaaaa; /* 4 */
+    line-height: 1px; /* 5 */
+    font-size: 1px; /* 5 */
+}
+
+/*
+ Inline Text
+ * Mimics browsers as close as possible while maintaining cross browser consistency
+ * Includes some invalid legacy elements as they may be added by older WYSIWYG editors
+========================================================================== */
+.quarantineContent strong,
+.quarantineContent b {
+    font-weight: bold;
+}
+
+.quarantineContent em,
+.quarantineContent i {
+    font-style: italic;
+}
+
+.quarantineContent del,
+.quarantineContent strike,
+.quarantineContent s {
+    text-decoration: line-through;
+}
+
+.quarantineContent u,
+.quarantineContent ins {
+    text-decoration: underline;
+}
+
+.quarantineContent sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.quarantineContent sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.quarantineContent big {
+    font-size: larger;
+}
+
+.quarantineContent small {
+    font-size: smaller;
+}
+
+.quarantineContent abbr,
+.quarantineContent acronym {
+    border-bottom: 1px dotted;
+}
+
+.quarantineContent cite,
+.quarantineContent dfn {
+    font-style: italic;
+}
+
+.quarantineContent q {
+    font-style: italic;
+}
+
+.quarantineContent q::before {
+    content: open-quote;
+}
+
+.quarantineContent q::after {
+    content: close-quote;
+}
+
+.quarantineContent q:lang(en) {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+.quarantineContent bdo,
+.quarantineContent bdi {
+    direction: rtl;
+}
+
+.quarantineContent blink {
+    text-decoration: blink;
+}
+
+/*
+ Lists
+ 1. Indent lists and leave room for the list item mark
+ 2. Nested lists have no bottom margin
+ 3. Second level nested lists
+ 4. Third level nested lists
+========================================================================== */
+.quarantineContent ul,
+.quarantineContent ol,
+.quarantineContent dl {
+    margin-bottom: 1rem;
+}
+
+.quarantineContent ul {
+    list-style-type: disc;
+}
+
+.quarantineContent ol {
+    list-style-type: decimal;
+}
+
+.quarantineContent dt {
+    font-weight: bold;
+}
+
+.quarantineContent li,
+.quarantineContent dd {
+    margin-left: 1.7rem; /* 1 */
+}
+
+/* 2 */
+.quarantineContent ul ul,
+.quarantineContent ul ol,
+.quarantineContent ul dl,
+.quarantineContent ol ul,
+.quarantineContent ol ol,
+.quarantineContent ol dl,
+.quarantineContent dl ul,
+.quarantineContent dl ol,
+.quarantineContent dl dl {
+    margin-bottom: 0;
+}
+
+/* 3 */
+.quarantineContent ol ul,
+.quarantineContent ul ul {
+    list-style-type: circle;
+}
+
+/* 4 */
+.quarantineContent ol ol ul,
+.quarantineContent ol ul ul,
+.quarantineContent ul ol ul,
+.quarantineContent ul ul ul {
+    list-style-type: square;
+}
+
+
+/*
+ Tables
+ 1. Table should never overflow their parent container and will always use 100% of the container and use !important to override inheritance from ancestors
+ 2. Push content away from the horizontal rule more than the normal spacing
+========================================================================== */
+.quarantineContent table {
+    width: 100% !important; /* 1 */
+    margin-bottom: 1.7rem;  /* 2 */
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.quarantineContent caption {
+    font-size: smaller;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.quarantineContent tr {
+    vertical-align: middle;
+}
+
+.quarantineContent tbody {
+    vertical-align: middle;
+}
+
+.quarantineContent thead {
+    vertical-align: middle;
+}
+
+.quarantineContent tfoot {
+    vertical-align: middle;
+}
+
+.quarantineContent td {
+    vertical-align: inherit;
+    text-align: left;
+    padding: 4px 12px;
+    border: 1px solid #666666;
+}
+
+.quarantineContent th {
+    vertical-align: inherit;
+    text-align: left;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: 1px solid #666666;
+    background-color: transparent;
+}
+
+/*
+ Computer Output
+ 1. Push content away from the horizontal rule more than the normal spacing
+ 2. `code` styles get reset when `code` is nested inside `pre`
+========================================================================== */
+.quarantineContent pre {
+    margin-top: 1.7rem; /* 1 */
+    margin-bottom: 1.7rem; /* 1 */
+    padding: 2rem;
+    border: 1px solid #aaaaaa;
+    background-color: #f8f8f8;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    border-radius: 2px;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.quarantineContent code {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #aaaaaa;
+    background-color: #f8f8f8;
+    color: #dd1144;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.quarantineContent pre code {
+    display: block;
+    padding: 0; /* 2 */
+    background-color: transparent; /* 2 */
+    border: none; /* 2 */
+    font-size: inherit; /* 2 */
+    color: inherit; /* 2 */
+    border-radius: 0; /* 2 */
+}
+
+.quarantineContent code,
+.quarantineContent samp,
+.quarantineContent tt,
+.quarantineContent kbd,
+.quarantineContent var {
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.quarantineContent var {
+    font-style: italic;
+}
+
+@media(min-width: 768px) {
+	.quarantineContent > .contentImage {
+		max-width: 75%;
+	}
+	
+	.contentImage__right {
+		float: right;
+		margin: 0 0 1.9% 1.9%;
+	}
+}

@@ -1,0 +1,25 @@
+{
+  "name": "btcfitnessmn",
+  "version": "1.0.0",
+  "description": "btcfitness website",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-file-include": "^2.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TitanFury/btcfitnessmn.git"
+  },
+  "author": "Mark Witmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TitanFury/btcfitnessmn/issues"
+  },
+  "homepage": "https://github.com/TitanFury/btcfitnessmn#readme"
+}
