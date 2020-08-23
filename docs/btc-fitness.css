@@ -50,210 +50,294 @@ table {
 /* End CSS Reset */
 @font-face {
 	font-family: 'icomoon';
-	src:  url('icomoon/fonts/icomoon.eot?tfb99n');
-	src:  url('icomoon/fonts/icomoon.eot?tfb99n#iefix') format('embedded-opentype'),
-	  url('icomoon/fonts/icomoon.ttf?tfb99n') format('truetype'),
-	  url('icomoon/fonts/icomoon.woff?tfb99n') format('woff'),
-	  url('icomoon/fonts/icomoon.svg?tfb99n#icomoon') format('svg');
+	src:  url('icomoon/fonts/icomoon.eot?42dj99');
+	src:  url('icomoon/fonts/icomoon.eot?42dj99#iefix') format('embedded-opentype'),
+	  url('icomoon/fonts/icomoon.ttf?42dj99') format('truetype'),
+	  url('icomoon/fonts/icomoon.woff?42dj99') format('woff'),
+	  url('icomoon/fonts/icomoon.svg?42dj99#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
   }
   
   [class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: never;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
   
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   .icon-file-empty:before {
-	content: "\e924";
+    content: "\e924";
   }
   .icon-folder:before {
-	content: "\e92f";
+    content: "\e92f";
   }
   .icon-folder-open:before {
-	content: "\e930";
+    content: "\e930";
   }
   .icon-phone:before {
-	content: "\e942";
+    content: "\e942";
   }
   .icon-phone-hang-up:before {
-	content: "\e943";
+    content: "\e943";
   }
   .icon-pushpin:before {
-	content: "\e946";
+    content: "\e946";
   }
   .icon-location:before {
-	content: "\e947";
+    content: "\e947";
   }
   .icon-location2:before {
-	content: "\e948";
+    content: "\e948";
   }
   .icon-printer:before {
-	content: "\e954";
+    content: "\e954";
   }
   .icon-display:before {
-	content: "\e956";
+    content: "\e956";
   }
   .icon-mobile:before {
-	content: "\e958";
+    content: "\e958";
   }
   .icon-mobile2:before {
-	content: "\e959";
+    content: "\e959";
   }
   .icon-box-add:before {
-	content: "\e95e";
+    content: "\e95e";
   }
   .icon-box-remove:before {
-	content: "\e95f";
+    content: "\e95f";
   }
   .icon-user:before {
-	content: "\e971";
+    content: "\e971";
   }
   .icon-users:before {
-	content: "\e972";
+    content: "\e972";
   }
   .icon-quotes-left:before {
-	content: "\e977";
+    content: "\e977";
   }
   .icon-quotes-right:before {
-	content: "\e978";
+    content: "\e978";
   }
   .icon-spinner11:before {
-	content: "\e984";
+    content: "\e984";
   }
   .icon-cog:before {
-	content: "\e994";
+    content: "\e994";
   }
   .icon-cogs:before {
-	content: "\e995";
+    content: "\e995";
   }
   .icon-mug:before {
-	content: "\e9a2";
+    content: "\e9a2";
   }
   .icon-menu:before {
-	content: "\e9bd";
+    content: "\e9bd";
   }
   .icon-download3:before {
-	content: "\e9c7";
+    content: "\e9c7";
   }
   .icon-upload3:before {
-	content: "\e9c8";
+    content: "\e9c8";
   }
   .icon-earth:before {
-	content: "\e9ca";
+    content: "\e9ca";
   }
   .icon-link:before {
-	content: "\e9cb";
+    content: "\e9cb";
   }
   .icon-flag:before {
-	content: "\e9cc";
+    content: "\e9cc";
   }
   .icon-bookmark:before {
-	content: "\e9d2";
+    content: "\e9d2";
   }
   .icon-bookmarks:before {
-	content: "\e9d3";
+    content: "\e9d3";
   }
   .icon-star-empty:before {
-	content: "\e9d7";
+    content: "\e9d7";
   }
   .icon-star-full:before {
-	content: "\e9d9";
+    content: "\e9d9";
   }
   .icon-heart:before {
-	content: "\e9da";
+    content: "\e9da";
   }
   .icon-notification:before {
-	content: "\ea08";
+    content: "\ea08";
   }
   .icon-question:before {
-	content: "\ea09";
+    content: "\ea09";
   }
   .icon-info:before {
-	content: "\ea0c";
+    content: "\ea0c";
   }
   .icon-cross:before {
-	content: "\ea0f";
+    content: "\ea0f";
   }
   .icon-checkmark:before {
-	content: "\ea10";
+    content: "\ea10";
   }
   .icon-checkmark2:before {
-	content: "\ea11";
+    content: "\ea11";
   }
   .icon-play3:before {
-	content: "\ea1c";
+    content: "\ea1c";
   }
   .icon-pause2:before {
-	content: "\ea1d";
+    content: "\ea1d";
   }
   .icon-arrow-up:before {
-	content: "\ea32";
+    content: "\ea32";
   }
   .icon-arrow-up-right:before {
-	content: "\ea33";
+    content: "\ea33";
   }
   .icon-arrow-right:before {
-	content: "\ea34";
+    content: "\ea34";
   }
   .icon-arrow-down-right:before {
-	content: "\ea35";
+    content: "\ea35";
   }
   .icon-arrow-down:before {
-	content: "\ea36";
+    content: "\ea36";
   }
   .icon-arrow-down-left:before {
-	content: "\ea37";
+    content: "\ea37";
   }
   .icon-arrow-left:before {
-	content: "\ea38";
+    content: "\ea38";
   }
   .icon-circle-up:before {
-	content: "\ea41";
+    content: "\ea41";
   }
   .icon-circle-right:before {
-	content: "\ea42";
+    content: "\ea42";
   }
   .icon-circle-down:before {
-	content: "\ea43";
+    content: "\ea43";
   }
   .icon-checkbox-checked:before {
-	content: "\ea52";
+    content: "\ea52";
   }
   .icon-checkbox-unchecked:before {
-	content: "\ea53";
+    content: "\ea53";
   }
   .icon-mail4:before {
-	content: "\ea86";
+    content: "\ea86";
   }
   .icon-facebook:before {
-	content: "\ea90";
+    content: "\ea90";
   }
   .icon-instagram:before {
-	content: "\ea92";
+    content: "\ea92";
   }
   .icon-youtube:before {
-	content: "\ea9d";
+    content: "\ea9d";
   }
   .icon-github:before {
-	content: "\eab0";
+    content: "\eab0";
   }
   .icon-linkedin:before {
-	content: "\eac9";
+    content: "\eac9";
   }
   .icon-linkedin2:before {
-	content: "\eaca";
+    content: "\eaca";
+  }
+  .icon-home:before {
+    content: "\e900";
+  }
+  .icon-pencil:before {
+    content: "\e905";
+  }
+  .icon-play:before {
+    content: "\e912";
+  }
+  .icon-file-empty1:before {
+    content: "\e925";
+  }
+  .icon-files-empty:before {
+    content: "\e926";
+  }
+  .icon-folder1:before {
+    content: "\e931";
+  }
+  .icon-folder-open1:before {
+    content: "\e932";
+  }
+  .icon-cart:before {
+    content: "\e93a";
+  }
+  .icon-credit-card:before {
+    content: "\e93f";
+  }
+  .icon-location1:before {
+    content: "\e949";
+  }
+  .icon-bubble:before {
+    content: "\e96b";
+  }
+  .icon-bubble2:before {
+    content: "\e96e";
+  }
+  .icon-user1:before {
+    content: "\e973";
+  }
+  .icon-spinner111:before {
+    content: "\e985";
+  }
+  .icon-lock:before {
+    content: "\e98f";
+  }
+  .icon-unlocked:before {
+    content: "\e990";
+  }
+  .icon-cog1:before {
+    content: "\e996";
+  }
+  .icon-trophy:before {
+    content: "\e99e";
+  }
+  .icon-mug1:before {
+    content: "\e9a3";
+  }
+  .icon-bin:before {
+    content: "\e9ac";
+  }
+  .icon-bin2:before {
+    content: "\e9ad";
+  }
+  .icon-earth1:before {
+    content: "\e9cd";
+  }
+  .icon-plus:before {
+    content: "\ea0a";
+  }
+  .icon-minus:before {
+    content: "\ea0b";
+  }
+  .icon-info1:before {
+    content: "\ea0d";
+  }
+  .icon-amazon:before {
+    content: "\ea87";
+  }
+  .icon-vimeo:before {
+    content: "\eaa0";
+  }
+  .icon-vimeo2:before {
+    content: "\eaa1";
   }
 
 .trainingphoto {
@@ -282,7 +366,7 @@ body {
 }
 
 .site__bd {
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 :root {
@@ -291,6 +375,7 @@ body {
 	--SECONDARY_COLOR: #0c97d0;
 	--ACCENT_COLOR: #5cc150;
 	--FONT_COLOR_LIGHT: #FFFFFF;
+	--FONT_FAMILY_CONTENT: sans-serif, Helvetica, Arial;
 	--HDG_FONT: Tahoma, Geneva, sans-serif;
 }
 
@@ -302,6 +387,7 @@ body {
 
 .site__bd {
 	flex: 1;
+	font-family: var(--FONT_FAMILY_CONTENT);
 }
 
 .header {
@@ -478,9 +564,9 @@ body {
 }
 
 .quote {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size: 16px;
-    font-weight: bold;
+	font-weight: bold;
+	font-style: italic;
     color: #333333;
 }
 
@@ -505,7 +591,8 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 33%;
+		width: 32%;
+		line-height: 1.4;
 		z-index: 1;
 		max-width: auto;
 	}
@@ -692,7 +779,7 @@ a:active {
     font-family: inherit;  /* 1 */
     font-weight: normal;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     -ms-word-wrap: break-word; /* 2 */
         word-wrap: break-word; /* 2 */
 }
@@ -1102,7 +1189,7 @@ a:active {
 
 @media(min-width: 768px) {
 	.quarantineContent > .contentImage {
-		max-width: 75%;
+		max-width: 75% !important; 
 	}
 	
 	.contentImage__right {
@@ -1110,3 +1197,37 @@ a:active {
 		margin: 0 0 1.9% 1.9%;
 	}
 }
+
+/* -----Horizontal Rule Styling------ */
+.hr {
+	--hr_INCREMENT: 10px;
+	margin: var(--hr_INCREMENT) 0px;
+}
+
+.hr__3 {
+	margin: calc(var(--hr_INCREMENT) * 3) 0;
+}
+/* -----------------------------------*/
+
+/* -----------Testimonial------------ */
+.testimonial {}
+
+.testimonial__hdg {
+	margin-bottom: 10px;
+}
+
+.testimonial__content {
+	font-style: italic;
+	margin: 0 0 15px 15px;
+}
+
+.testimonial__content > .icon-quotes-left,
+.testimonial__content > .icon-quotes-right {
+	font-size: 14px;
+}
+
+.testimonial__signature {
+	margin-left: 15px;
+	font-weight: bold;
+}
+/* -----------------------------------*/
