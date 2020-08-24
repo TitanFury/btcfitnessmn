@@ -407,12 +407,14 @@ body {
 	box-sizing: border-box;
 }
 
-.header__item--primary > .header__itemInner{
+.header__item--primary > .header__itemInner {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 }
+
+
 
 @media (min-width: 768px) {
 	.header__item--primary > .header__itemInner{
@@ -441,6 +443,8 @@ body {
     font-weight: bold;
 	color: var(--FONT_COLOR_LIGHT);
 	text-align: center;
+	padding-top: 15px;
+	border-top: 2px solid white;
 	margin-bottom: 10px;
 }
 
@@ -459,6 +463,8 @@ body {
 
 @media (min-width: 768px) {
 	.contactCallout {
+		padding-top: 0;
+		border-top: 0;
 		margin-left: 15px;
 		margin-bottom: 0;
 	}
@@ -544,11 +550,61 @@ body {
 
 .logo {
 	max-width: 350px;
-	line-height: 0;
+	padding-left: 80px;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	position: relative;
 }
+
+.logo__link:hover {
+	color: white;
+}
+
+.logo__link {
+	display: block;
+	width: 100%;
+}
+
+.logo:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 50%;
+    transform: translateY(-50%);
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background-color: white;
+	overflow: hidden;
+	content: '\271D';
+	color: var(--PRIMARY_COLOR);
+	line-height: 1;
+	font-size: 75px;
+	text-align: center;
+}
+
+.logo__linkText {
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.logo__linkTextTop {
+	font-size: 40px;
+}
+
+.logo__linkTextBottom {
+	font-size: 16px;
+	font-weight: 400;
+}
+
 @media (min-width: 768px) {
 	.logo {
 		max-width: 450px;
+	}
+
+	.logo__linkTextBottom {
+		font-size: 20px;
 	}
 }
 
@@ -671,16 +727,6 @@ a:active {
 
 .hdg__5 {
 	font-size: 12px;
-}
-
-.isVisuallyHidden {
-	text-indent: -9999;
-	background: transparent;
-	color: transparent;
-	width: 1px;
-	margin: -1px;
-	clip: rect(0,0,0,0);
-	visibility: hidden;
 }
 
 .vr {
@@ -1207,7 +1253,6 @@ a:active {
 .hr__3 {
 	margin: calc(var(--hr_INCREMENT) * 3) 0;
 }
-/* -----------------------------------*/
 
 /* -----------Testimonial------------ */
 .testimonial {}
@@ -1230,4 +1275,18 @@ a:active {
 	margin-left: 15px;
 	font-weight: bold;
 }
-/* -----------------------------------*/
+
+/* ------------ Utilities ------------*/
+.isVisuallyHidden {
+	text-indent: -9999;
+	background: transparent;
+	color: transparent;
+	width: 1px;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+	visibility: hidden;
+}
+
+.u-displayBlock {
+	display: block;
+}
