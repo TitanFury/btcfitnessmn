@@ -375,6 +375,7 @@ body {
 	--SECONDARY_COLOR: #0c97d0;
 	--ACCENT_COLOR: #5cc150;
 	--FONT_COLOR_LIGHT: #FFFFFF;
+	--CONTENT_LINK_COLOR: #008cc6;
 	--FONT_FAMILY_CONTENT: sans-serif, Helvetica, Arial;
 	--HDG_FONT: Tahoma, Geneva, sans-serif;
 }
@@ -691,11 +692,11 @@ body {
 /* ------- Generic Link States ------- */
 a:link {
 	text-decoration: none;
-	color: #FFF;
+	color: var(--FONT_COLOR_LIGHT);
 }
 a:visited {
 	text-decoration: none;
-	color: #FFF;
+	color: var(--FONT_COLOR_LIGHT);
 }
 a:hover {
 	text-decoration: none;
@@ -703,6 +704,15 @@ a:hover {
 }
 a:active {
 	text-decoration: none;
+}
+
+.site__bd a:link {
+	text-decoration: none;
+	color: var(--CONTENT_LINK_COLOR);
+}
+.site__bd a:visted {
+	text-decoration: none;
+	color: var(--CONTENT_LINK_COLOR);
 }
 
 /* -------- Heading ------- */
@@ -890,7 +900,7 @@ a:active {
  Anchors
 ========================================================================== */
 .quarantineContent a:link {
-    color: #0000ff;
+    color: var(--CONTENT_LINK_COLOR);
     text-decoration: underline;
 }
 
@@ -900,7 +910,7 @@ a:active {
 
 .quarantineContent a:focus,
 .quarantineContent a:hover {
-    color: #0000ff;
+    color: var(--CONTENT_LINK_COLOR);
     text-decoration: underline;
 }
 
