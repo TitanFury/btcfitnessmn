@@ -553,6 +553,7 @@ body {
 	padding-left: 80px;
 	box-sizing: border-box;
 	margin-bottom: 15px;
+	margin-top: 15px;
 	position: relative;
 }
 
@@ -613,6 +614,10 @@ body {
 	width: 100%;
 }
 
+.constrain__500 {
+	max-width: 500px;
+}
+
 .constrain--page {
 	margin: 0 auto;
 	padding: 20px;
@@ -660,6 +665,7 @@ body {
 	}
 }
 
+/* ------- Generic Link States ------- */
 a:link {
 	text-decoration: none;
 	color: #FFF;
@@ -676,35 +682,7 @@ a:active {
 	text-decoration: none;
 }
 
-.micah {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	border-top-color: #FFF;
-	border-right-color: #FFF;
-	border-bottom-color: #FFF;
-	border-left-color: #FFF;
-	border-radius: 15px;
-	padding-right: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 5px;
-	margin-left: 15px;
-
-}
-/* .micah1 {
-	border-top-color: #FFF;
-	border-right-color: #FFF;
-	border-bottom-color: #FFF;
-	border-left-color: #FFF;
-	border-radius: 15px;
-	margin-top: 0px;
-	margin-right: 15px;
-	margin-bottom: 5px;
-	margin-left: 0px;
-	padding: 0px;
-} */
-
+/* -------- Heading ------- */
 .hdg {
 	font-family: var(--HDG_FONT);
 	font-weight: bold;
@@ -713,22 +691,26 @@ a:active {
 }
 
 .hdg__1 {
-	font-size: 24px;
+	font-size: 36px;
 }
 
 .hdg__2 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 24px;
+}
+
+.hdg__3 {
+	font-size: 21px;
 }
 
 .hdg__4 {
-	font-size: 14px;
+	font-size: 18px;
 }
 
 .hdg__5 {
-	font-size: 12px;
+	font-size: 16px;
 }
 
+/* --------Vertical Rhythm ------- */
 .vr {
 	margin-bottom: 2px;
 }
@@ -769,6 +751,18 @@ a:active {
 	margin-bottom: 20px;
 }
 
+.vr__11 {
+	margin-bottom: 22px;
+}
+
+.vr__12 {
+	margin-bottom: 24px;
+}
+
+.vr__13 {
+	margin-bottom: 26px;
+}
+/* --------Footer Styling ------- */
 .footer {
 	color: white;
 	background: linear-gradient(#2aa3d6, #0965ab);
@@ -804,6 +798,7 @@ a:active {
 	width: 100%;
 }
 
+/* -------- WYSIWYG Styling ------- */
 .quarantineContent:before,
 .quarantineContent:after {
     content: " ";
@@ -1289,4 +1284,49 @@ a:active {
 
 .u-displayBlock {
 	display: block;
+}
+/* -------- Table styling ------- */
+.tableWrap {
+	overflow: auto;
+}
+
+.table {
+	width: 100%;
+	font-size: 14px;
+}
+
+.table-body-row-cell,
+.table-head-row-cell {
+	max-width: 0;
+	border: 1px solid black;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+.table-head-row-cell {
+	font-weight: bold;
+
+}
+
+.table__btctheme .table-head-row-cell {
+	background: var(--ACCENT_COLOR);
+	border: 2px solid var(--ACCENT_COLOR);
+	color: var(--FONT_COLOR_LIGHT);
+}
+
+.table__btctheme .table-body-row-cell {
+	border: 2px solid var(--ACCENT_COLOR);
+}
+
+.table__btctheme .table-body-row-cell:first-child {
+	font-weight: bold;
+	width: 34%;
+}
+
+@media (min-width: 600px) {
+
+	.table {
+		font-size: 16px;
+	}
+	
 }
