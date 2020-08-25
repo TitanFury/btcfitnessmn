@@ -20,31 +20,24 @@
                   <h1>Contact Us</h1>
                   <h2>Micah Watkins</h2>
                   <p><a href="tel:6126704355">612.670.4355</a></p>
-                  <h2>Training Hours</h2>
-                  <p><strong>Monday, Wednesday, Friday</strong> <br> (3pm - 7pm)</p>
-                  <p><strong>Tuesday, Thursday</strong> <br> (7am - 11am)</p>
-                  <p><strong>Saturday</strong> <br> (7am - 12 noon)</p>
+                  <p><a href="mailto:watkinsm77@gmail.com">watkinsm77@gmail.com</a></p>
+                  <h2>Summer Training Hours</h2>
+                  <p><strong>Monday - Friday</strong><br>
+                    6am - 12pm
+                    <br>
+                    3pm - 7pm
+                </p>
+                <p><strong>Saturday</strong> <br> 6am - 11am</p>
+                <p>(Fall Training Hours TBD)</p>
                 </div>
             </div>
             <img class="" src="images/micah-demonstration-2.png" alt="Micah Watkins demonstrating an exercise" />
             <img class="" src="images/micah-training-3.png" alt="Micah instructing during a personal training session" />
           <hr class="hr hr__3" />
-          <div class="testimonial">
-            <div class="testimonial__hdg">
-              <div class="hdg hdg__3">
-                Client Testimonial
-              </div>
-            </div>
-            <div class="testimonial__content">
-              <i class="icon-quotes-left"></i>
-              Coach Watkins pushed our guys to their limit.  He used a variety of strength and conditioning drills to keep things fresh.  I feel our team bonded closer because of the weekly workouts that Coach Watkins put them through.  It was good to have another voice encouraging and challenging our players.  I feel our players now see how hard they have to work to get themselves to a higher level of play. <i
-                class="icon-quotes-right"
-              ></i>
-            </div>
-            <div class="testimonial__signature">
-              - Greg M, Plymouth, MN
-            </div>
-          </div>
+          @@include('./includes/_testimonial.html', {
+            "testimonial" : "Coach Watkins pushed our guys to their limit.  He used a variety of strength and conditioning drills to keep things fresh.  I feel our team bonded closer because of the weekly workouts that Coach Watkins put them through.  It was good to have another voice encouraging and challenging our players.  I feel our players now see how hard they have to work to get themselves to a higher level of play.",
+            "signature": "- Greg M, Plymouth, MN"
+        })
         </div>
       </div>
       <div class="site__ft">
