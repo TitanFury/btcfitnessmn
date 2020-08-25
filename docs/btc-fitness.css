@@ -570,18 +570,41 @@ body {
 	display: block;
 	position: absolute;
 	left: 0;
-	top: 50%;
-    transform: translateY(-50%);
+	/* top: 50%; */
+    /* transform: translateY(-50%); */
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
 	background-color: white;
 	overflow: hidden;
-	content: '\271D';
+	/* content: '\271D'; */
+	content: '';
 	color: var(--PRIMARY_COLOR);
-	line-height: 1;
-	font-size: 75px;
-	text-align: center;
+	/* line-height: 1; */
+	/* font-size: 75px; */
+	/* text-align: center; */
+}
+
+.logo__icon:after {
+	content: '';
+	background-color: var(--PRIMARY_COLOR);
+	z-index: 1;
+	width: 34px;
+	height: 8px;
+	left: 18px;
+	top: 23px;
+	position: absolute;
+}
+
+.logo__icon:before {
+	content: '';
+	background-color: var(--PRIMARY_COLOR);
+	z-index: 1;
+	width: 8px;
+	height: 54px;
+	left: 31px;
+	top: 9px;
+	position: absolute;
 }
 
 .logo__linkText {
