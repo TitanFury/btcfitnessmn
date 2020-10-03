@@ -1338,7 +1338,7 @@ a:active {
 
 .table-head-row-cell {
 	font-weight: bold;
-
+  width: 50%;
 }
 
 .table__btctheme .table-head-row-cell {
