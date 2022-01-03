@@ -550,12 +550,12 @@ body {
 }
 
 .logo {
-	max-width: 350px;
-	padding-left: 80px;
+  max-width: 330px;
 	box-sizing: border-box;
 	margin-bottom: 15px;
 	margin-top: 15px;
-	position: relative;
+  position: relative;
+  /* background: url('./images/dumbell.svg'), center center / 300px auto; */
 }
 
 .logo__link:hover {
@@ -564,26 +564,27 @@ body {
 
 .logo__link {
 	display: block;
-	width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;;
 }
 
-.logo:before {
+.logo__img {
+  max-width: 20%;
+}
+
+/* THIS BLOCK WAS THE OLD LOGO */
+/* .logo:before {
 	display: block;
 	position: absolute;
 	left: 0;
-	/* top: 50%; */
-    /* transform: translateY(-50%); */
 	height: 70px;
 	width: 70px;
 	border-radius: 50%;
 	background-color: white;
 	overflow: hidden;
-	/* content: '\271D'; */
 	content: '';
 	color: var(--PRIMARY_COLOR);
-	/* line-height: 1; */
-	/* font-size: 75px; */
-	/* text-align: center; */
 }
 
 .logo__icon:after {
@@ -606,21 +607,25 @@ body {
 	left: 31px;
 	top: 9px;
 	position: absolute;
-}
+} */
 
 .logo__linkText {
 	font-family: sans-serif;
 	font-weight: bold;
-	text-transform: uppercase;
+  text-transform: uppercase;
+  position: relative;
+  left: -10px;
 }
 
 .logo__linkTextTop {
-	font-size: 40px;
+  font-size: 40px;
+  white-space: nowrap;
 }
 
 .logo__linkTextBottom {
 	font-size: 16px;
-	font-weight: 400;
+  font-weight: 400;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
